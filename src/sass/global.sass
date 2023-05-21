@@ -1,0 +1,183 @@
+body
+   font-family: 'Montserrat', sans-serif
+   background: #ffff
+   font-weight: 400
+   font-size: 16px
+   line-height: 100%
+   color: #282828
+a
+   text-decoration: none
+   box-sizing: border-box
+   transition: 0.5s !important
+   &:hover 
+      color: $blue
+.container
+   padding: 0 15px
+   max-width: 1302px
+   margin: 0 auto
+   @media ( max-width: 1199px )
+      max-width: 960px
+   @media (max-width: 991px)
+      max-width: 720px
+   @media (max-width: 767px)
+      max-width: 540px
+.d-flex
+   display: flex
+.body-wrap
+   overflow: hidden
+   position: relative
+   display: flex
+   flex-direction: column
+   min-height: 100vh
+footer
+   margin-top: auto
+h1
+   font-size: 45px
+   line-height: 65px
+   text-transform: uppercase
+   color: #282828
+   font-weight: bold
+   margin: 0
+h2 
+   margin: 0
+   color: #1a1a1a
+   line-height: 50px
+   font-size: 40px
+   font-weight: bold
+   text-transform: uppercase
+ul 
+   margin: 0
+   padding: 0
+   list-style-type: none
+p
+   margin: 0
+.svg 
+   transition: 0.5s ease
+a
+   transition: color 0.5s ease
+   box-sizing: border-box
+li
+   a
+      transition: color 0.5s ease
+button
+   cursor: pointer
+   box-sizing: border-box
+textarea
+   transition: border 0.5s
+   box-sizing: border-box
+   &:focus
+      transition: border 0.5s
+      outline: none
+      border-bottom: 1px solid $blue !important
+input
+   transition: 0.5s
+   box-sizing: border-box
+   border: none
+   border-bottom: 1px solid #fff
+   &:disabled
+      pointer-events: none
+      opacity: 0.5
+   &:focus 
+      border-bottom: 1px solid $blue !important
+      transition: 0.5s
+   &:focus-visible
+      outline: initial
+path
+   transition: fill 0.5s, stroke 0.5s
+div 
+   box-sizing: border-box
+.icon 
+   transition: fill 0.5s, stroke 0.5s
+html * 
+   scrollbar-width: thin
+   scrollbar-color: blue $blue
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar 
+   height: 4px
+   width: 4px
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track 
+   background: #E7E7E7
+   border-radius: 3px
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb 
+   background-color: $blue
+   border-radius: 6px
+.nav-main 
+   scrollbar-width: thin
+   scrollbar-color: blue white
+.nav-main::-webkit-scrollbar,
+.nav-main::-webkit-scrollbar 
+   height: 4px
+   width: 4px
+.nav-main::-webkit-scrollbar-track,
+.nav-main::-webkit-scrollbar-track 
+   background: #E7E7E7
+   border-radius: 3px
+.nav-main::-webkit-scrollbar-thumb,
+.nav-main::-webkit-scrollbar-thumb 
+   background-color: white
+   border-radius: 6px
+.btn 
+   background: $blue
+   display: flex
+   align-items: center
+   justify-content: center
+   width: 144px
+   height: 144px
+   border-radius: 50%
+   transition: 0.5s
+   border: 2px solid $blue
+   position: relative
+   p 
+      color: #ffffff
+      line-height: 21px
+      font-size: 13px
+      font-weight: 700
+      text-transform: uppercase
+      margin: 5px 0 0 3px
+      transition: 0.5s
+   &:before 
+      content: ""
+      display: block
+      position: absolute
+      bottom: -20px
+      left: -19px
+      width: 144px
+      height: 144px
+      border: 1px solid #e8e8e8
+      border-radius: 50%
+      z-index: -1
+   &:after 
+      content: ""
+      display: block
+      position: absolute
+      width: 9px
+      height: 9px
+      background: url(../img/btn-arr.png) no-repeat
+      right: -35px
+      top: 81px
+   &:hover 
+      background: white 
+      border: 2px solid $blue
+      color: $blue
+      p 
+         color: $blue
+   &_2 
+      width: 221px
+      height: 55px
+      border-radius: 0px
+      font-weight: bold
+      text-transform: uppercase
+      color: white 
+      font-size: 14px
+      font-weight: 700
+      &:after 
+         display: none
+      &:before 
+         display: none
+      &:hover
+         border: 1px solid $blue
+         color: $blue
+.blue 
+   color: $blue
